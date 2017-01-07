@@ -1,0 +1,220 @@
+body {
+	background-color: #e2e2e2;
+	font-family: 'Amatic SC', cursive; 
+	position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*overflow-x: hidden; */
+}
+
+.container {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.white {
+	background-color: white;
+}
+
+.gray {
+	background-color: #e2e2e2;
+	/*overflow:hidden;*/
+}
+
+.coming-soon {
+	margin-top: 200px;
+}
+
+.landing_tile {
+	width: 320px; /* you can use % */
+    height: auto;
+    padding: 30px 10px;
+}
+
+.landing_header_text {
+	font-size: 60px;
+	font-weight: bold;
+	margin: 30px 30px 30px 30px;
+}
+
+.center {
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+.text-center {
+   text-align:center
+}
+
+.coming_soon_text {
+	font-size: 112px;
+	font-weight: bold;
+}
+
+.bg-img {
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#backgroundimg {
+	background: url("images/seattle_background4_trans_crop.png") no-repeat center center;
+	width: 100%;
+	height: 500px;
+	background-size:cover
+}
+
+.city-logo {
+	text-align: center;
+	width: 320px; /* you can use % */
+    height: auto;
+    padding-top: 50px;
+}
+
+.bg-img-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	margin-top: 50px;
+	text-align: center
+}
+
+.nav-bar-text {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+	outline: #000000 solid;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.nav-bar-text:hover {
+	background-color: #8AFFF9;
+
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.nav-bar {
+	position: relative; 
+	z-index: 150;
+  	background-color: #0DD6CC;
+	height: 150px;
+}
+
+.nav-bar-scrolled {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.find-your-hood {
+	padding-top: 0px;
+}
+
+.find-your-hood-scrolled {
+	padding-top: 150px;
+}
+
+a, a:hover, a.smoothScroll {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header-text {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.header-sub-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	margin-top: 30px;
+	color: #666666;
+}
+
+.explore_tile {
+	width: 260px; /* you can use % */
+    height: auto;
+    padding: 20px 10px;
+    /*overflow:hidden;*/
+}
+
+.img-resize img {
+	width: 100%;
+}
+
+#form {
+  padding-top: 40px;
+}
+
+.control-label, input, select {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0px;
+	outline: none;
+}
+
+.form-control {
+	border: 2px solid #666666;
+	border-radius: 4px;
+}
+
+.form-group .btn, #dragdrop .btn {
+	background: #0DD6CC;
+	color: inherit;
+	border: none;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 40px;
+
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.form-group .btn:hover, .form-group .btn:active, #dragdrop .btn:hover, #dragdrop .btn:active  {
+	background: #8AFFF9;
+	color: inherit;
+	border: none;
+	outline: none;
+}
+
+.drag-btn {
+	margin-top: 50px;
+}
+
+.top-hoods-subtext {
+	text-align: center;
+	font-size: 50px;
+}
+
+
+
+
+
+

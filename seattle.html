@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Hoods Of">
+    <meta name="author" content="Michelle Hochman">
+    <!--<link rel="icon" href="css/images/zaerrfavcon.png">-->
+
+    <title>Hoods Of</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap-3.3.6-dist/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+   <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet" type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dragdrop.css" />
+    
+
+
+
+    <!-- Google Analytics -->
+   <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82995738-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>-->
+
+  </head>
+
+  <body>
+
+
+  <!--<div class="container">-->
+
+    <!-- Image -->
+    <header id="backgroundimg">
+      <div>
+        <img src="css/images/logo_seattle_trans.png" class="city-logo center-block">
+        <h2 class="bg-img-text">Let us help you find your perfect neighborhood.</h2>
+      </div>
+    </header>
+
+    <!-- Nav Bar -->
+    <div class="nav-bar">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="#find-your-hood" class="smoothScroll" >
+            <h2 class="nav-bar-text">Find Your Hood</h2>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="#explore-hoods" class="smoothScroll" >
+            <h2 class="nav-bar-text">Explore Hoods</h2>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="#meet-hoodrats" class="smoothScroll" >
+            <h2 class="nav-bar-text">Meet Your Hoodrats</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="find-your-hood" class="white">
+    <div class="container">
+
+      <!-- Find Your Hood -->
+      <div class="find-your-hood">
+        <h1 class="header-text">Find Your Hood:</h1>
+        <h5 class="header-sub-text">Drag and drop the following traits into your rank order of importance. Drag as many or as little as you’d like.</h5>
+      
+
+      <!-- Drap Drop -->  
+      <div id="dragdrop">
+      <div class="row">
+        <div class="col-sm-4">
+          <div id="sortable-wrapper-right">
+            <h3 class="sortable-text">Drag:</h3>
+            <ol id="sortable1" class="droptrue">
+              <li class="ui-state-default drag-item" ic="drag-something">Walkability</li>
+              <li class="ui-state-default drag-item">Safety</li>
+              <li class="ui-state-default drag-item">Restaurants</li>
+              <li class="ui-state-default drag-item">Bars</li>
+              <li class="ui-state-default drag-item">Dog Friendly</li>
+              <li class="ui-state-default drag-item">Kid Friendly</li>
+              <li class="ui-state-default drag-item">Public Transportation</li>
+              <li class="ui-state-default drag-item">Proximity To Work</li>
+              <li class="ui-state-default drag-item">Bike-ability</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="css/images/dotted_arrow.png" class="arrow-img">
+          <div class="text-center">
+            <a href="top_hoods.html" type="submit" class="drag-btn btn btn-primary btn-lg">SUBMIT</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div id="sortable-wrapper-left">
+            <h3 class="sortable-text">Drop:</h3>
+            <ol id="sortable2" class="droptrue placeholder-text" data-empty-message="Drop Here">
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+              <li class="placeholder droppable"></li>
+            </ol>
+          </div>
+        </div>
+      </div> <!-- END Row-->
+
+      <br style="clear:both">
+      </div> <!-- END Drag Drop-->
+
+      </div> <!-- END Find Your Hood--> 
+
+
+
+
+
+
+    </div> <!-- END Container -->
+    </div> <!-- END White-->
+
+    
+
+
+    <div id="explore-hoods" class="gray">
+    <div class="container">
+
+      <!-- Explore Hood -->
+      <div class="explore-hoods">
+        <h1 class="header-text">Explore Hoods:</h1>
+
+        <div class="row"> <!-- Row -->
+          <div class="col-sm-3 img-resize">
+            <a href="hood_deets.html">
+              <img src="css/images/logo_caphill.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_fremont.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_ballard.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_belltown.png" class="explore_tile">
+            </a>
+          </div>
+        </div> <!-- End Row -->
+        <div class="row"> <!-- Row -->
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_greenlake.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_madisonpark.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_downtown.png" class="explore_tile">
+            </a>
+          </div>
+          <div class="col-sm-3 img-resize">
+            <a href="coming_soon.html">
+              <img src="css/images/logo_sodo.png" class="explore_tile">
+            </a>
+          </div>
+        </div> <!-- End Row -->
+
+    </div> <!-- END Explore Hoods -->
+
+    </div> <!-- END Container -->
+    </div> <!-- END Gray-->
+
+
+
+
+    <div id="meet-hoodrats" class="white">
+    <div class="container">
+
+      <!-- Meet Hoodrats -->
+      <div class="meet-hoodrats">
+        <h1 class="header-text">Meet Your Hoodrats:</h1>
+        <h5 class="header-sub-text">Join your Hood’s email list to receive monthly emails on events.</h5>
+      
+        <div id="form">
+           <!-- Form -->
+           <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <form class="form-horizontal" action="https://formspree.io/michellehochman@gmail.com" method="post">
+                  <fieldset>
+            
+                    <!-- First Name input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="firstname">FIRST NAME</label>
+                      <div class="col-md-6">
+                        <input id="firstname" name="firstname" type="text" placeholder="" class="form-control">
+                      </div>
+                    </div>
+
+                    <!-- Last Name input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="lastname">LAST NAME</label>
+                      <div class="col-md-6">
+                        <input id="lastname" name="lastname" type="text" placeholder="" class="form-control">
+                      </div>
+                    </div>
+            
+                    <!-- Email input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="email">EMAIL</label>
+                      <div class="col-md-6">
+                        <input id="email" name="email" type="text" placeholder="" class="form-control">
+                      </div>
+                    </div>
+                    
+                     <!-- Phone number input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="hood">HOOD</label>
+                      <div class="col-md-6">
+                        <select id="hood" name="hood" type="text" placeholder="" class="form-control" >
+                          <option>Ballard</option>
+                          <option>Belltown</option>
+                          <option>Capitol Hill</option>
+                          <option>Central District</option>
+                          <option>Downtown</option>
+                          <option>Eastlake</option>
+                          <option>First Hill</option>
+                          <option>Fremont / Wallingford</option>
+                          <option>Green Lake</option>
+                          <option>Madison Park</option>
+                          <option>Madrona / Leschi</option>
+                          <option>Magnolia</option>
+                          <option>Phinney Ridge</option>
+                          <option>Pioneer Square</option>
+                          <option>Queen Anne</option>
+                          <option>Rainier Valley</option>
+                          <option>Sodo / International</option>
+                          <option>South Lake Union</option>
+                          <option>University District</option>
+                          <option>West Seattle</option>
+                          <option>Westlake</option>
+                        </select>
+                      </div>
+                    </div>
+            
+                    <!-- Form actions -->
+                    <div class="form-group">
+                      <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">SUBSCRIBE</button>
+                      </div>
+                    </div>            
+                  </fieldset>
+                  </form>
+                </div>         
+              </div>
+            </div> <!-- END Form -->
+
+      </div> <!-- END Meet Hoodrats -->
+
+    </div> <!-- END Container -->
+    </div> <!-- END White -->
+
+
+  <!--</div>-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-3.3.6-dist/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Drag Drop JS -->
+    <script>
+    $( function() {
+      $( "ol.droptrue" ).sortable({
+        connectWith: "ol"
+      });
+
+      $("#sortable2").sortable({
+          change: function(event, ui) {
+            ui.placeholder.css({visibility: 'visible'});
+          }
+      });
+
+      $( "#sortable1, #sortable2" ).disableSelection();
+    } );
+    </script>
+
+    <!-- Nav Bar Snap To Top JS-->
+    <script>
+      var  nb = $(".nav-bar");
+           fyh = $(".find-your-hood");
+          nbs = "nav-bar-scrolled";
+          fyhs = "find-your-hood-scrolled";
+          hdr = $('header').height();
+
+      $(window).scroll(function() {
+        if( $(this).scrollTop() > hdr ) {
+          nb.addClass(nbs);
+          fyh.addClass(fyhs)
+        } else {
+          nb.removeClass(nbs);
+          fyh.removeClass(fyhs);
+        }
+      });
+  
+    </script>
+
+    <!-- Smooth Scroll JS-->
+    <script>
+      $(function() {
+        // This will select everything with the class smoothScroll
+        // This should prevent problems with carousel, scrollspy, etc...
+        $('.smoothScroll').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 150
+              }, 800); // The number here represents the speed of the scroll in milliseconds
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+<script>
+document.getElementById("drag-something").addEventListener("dragstart", function(e) {
+    var crt = this.cloneNode(true);
+    crt.style.backgroundColor = "red";
+    crt.style.position = "absolute"; /* or visibility: hidden, or any of the above */
+    document.body.appendChild(crt);
+    e.dataTransfer.setDragImage(crt, 0, 0);
+}, false);
+</script>
+
+
+  </body>
+</html>
