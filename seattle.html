@@ -217,56 +217,93 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h1 class="modal-header-text">Hoods Deets:</h1>
+            <h1 class="modal-header-text">Hood Deets:</h1>
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-3">
                 <img src="css/images/logo_caphill.png" class="landing_tile">
               </div>
               <div class="col-sm-8">
-              <!--<table>
-                <div id="table-div">
-                  <tr>
-                    <td>Walk Score:</td>
-                    <td>91</td>
-                  </tr>
-                  <tr>
-                    <td>Transit Score:</td>
-                    <td>73</td>
-                  </tr>
-                  <tr>
-                    <td>Bike Score:</td>
-                    <td>63</td>
-                  </tr>
-                </div>
-              </table>-->
 
               <div id="modal-data">
                 <input type="checkbox" class="read-more-state" id="post-2" />
 
                 <ul class="read-more-wrap">
                   <li>
-                  <tr>
-                    <td>Walk Score:</td>
-                    <td>91</td>
-                  </tr>
+                    <div class="row" id="hood-attributes">
+                      <div class="col-sm-4">
+                        <tr>
+                          <td><span id="hood-attribute-title">Walk Score:</span></td>
+                          <td>91</td>
+                        </tr>
+                      </div> <!-- END Data Col-->
+                      <div class="col-sm-8">
+                        <div class="skillbar clearfix " data-percent="91%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div> <!-- END Skillbar Col -->
+                    </div> <!-- END Row -->
                   </li>
+
                   <li>
-                  <tr>
-                    <td>Transit Score:</td>
-                    <td>73</td>
-                  </tr>
+                    <div class="row" id="hood-attributes">
+                      <div class="col-sm-4">
+                        <tr>
+                          <td><span id="hood-attribute-title">Transit Score:</span></td>
+                          <td>73</td>
+                        </tr>
+                      </div> <!-- END Data Col-->
+                      <div class="col-sm-8">
+                        <div class="skillbar clearfix " data-percent="73%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div> <!-- END Skillbar Col -->
+                    </div> <!-- END Row -->
                   </li>
-                  <li class="read-more-target">
-                  <tr>
-                    <td>Bike Score:</td>
-                    <td>63</td>
-                  </tr>
+
+                  <li>
+                    <div class="row" id="hood-attributes">
+                      <div class="col-sm-4">
+                        <tr>
+                          <td><span id="hood-attribute-title">Bike Score:</span></td>
+                          <td>69</td>
+                        </tr>
+                      </div> <!-- END Data Col-->
+                      <div class="col-sm-8">
+                        <div class="skillbar clearfix " data-percent="69%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div> <!-- END Skillbar Col -->
+                    </div> <!-- END Row -->
                   </li>
+
+
+                  <li>
+                    <div class="row" id="hood-attributes">
+                      <div class="col-sm-4">
+                        <tr>
+                          <td><span id="hood-attribute-title">Safety:</span></td>
+                          <td>3 out of 5</td>
+                        </tr>
+                      </div> <!-- END Data Col-->
+                      <div class="col-sm-8">
+                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
+                      </div> <!-- END Skillbar Col -->
+                    </div> <!-- END Row -->
+                  </li>
+
                   <li class="read-more-target">
-                  <tr>
-                    <td>Safety:</td>
-                    <td>3 out of 5</td>
-                  </tr>
+                    <div class="row" id="hood-attributes">
+                      <div class="col-sm-8">
+                        <tr>
+                          <td><span id="hood-attribute-title">Average Rent:</span></td>
+                          <td>$1700/month</td>
+                        </tr>
+                      </div> <!-- END Data Col-->
+                    </div> <!-- END Row -->
                   </li>
                 </ul>
                 
@@ -483,6 +520,37 @@
             modal.style.display = "none";
         }
     }
+    </script>
+
+    <!-- Skill Bar -->
+    <script>
+      function isElementVisible($elementToBeChecked)
+      {
+          var TopView = $(window).scrollTop();
+          var BotView = TopView + $(window).height();
+          var TopElement = $elementToBeChecked.offset().top;
+          var BotElement = TopElement + $elementToBeChecked.height();
+          return ((BotElement <= BotView) && (TopElement >= TopView));
+      }
+
+      $(window).scroll(function () {
+          $( ".skillbar" ).each(function() {
+              $this = $(this);
+              isOnView = isElementVisible($(this));
+              if(isOnView && !$(this).hasClass('Starting')){
+                  $(this).addClass('Starting');
+                  startAnimation($(this));
+              }
+          });
+      });
+
+      function startAnimation($this) {
+        $this.find('.skillbar-bar').animate({
+          width: $this.attr('data-percent')
+        }, 3000, function() {
+          // Animation complete.
+        });
+      }
     </script>
 
 

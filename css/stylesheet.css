@@ -289,37 +289,19 @@ a, a:hover, a.smoothScroll {
 }
 
 .modal-content h4 {
-	font-size: 25px;
-}
-
-/*.modal-content table {
-	border: 1px solid black;
-	border-spacing: 10px;
-
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: normal;
+	font-family: 'Ubuntu', sans-serif;
 }
-
-.modal-content table {
-	border: 1px solid black;
-	border-spacing: 10px;
-	padding: 10px;
-}
-
-.modal-content table td {
-	padding: 10px;
-}
-
-#table-div {
-	padding: 20px;
-}*/
 
 #modal-data {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	padding: 20px;
+	color: #6e6e6e;
+	border: 3px solid #6e6e6e;
+	margin-right: 25px;
 }
 
 #modal-data ul {
@@ -330,9 +312,13 @@ a, a:hover, a.smoothScroll {
 	list-style: none;
 }
 
+#hood-attributes {
+	padding-bottom: 10px;
+}
 
-
-
+#hood-attribute-title {
+	font-weight: bold;
+}
 
 .read-more-state {
   display: none;
@@ -368,5 +354,42 @@ a, a:hover, a.smoothScroll {
   line-height: 2;
   border: 1px solid #ddd;
   border-radius: .25em;
+  margin-top: -30px;
 }
 
+
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	background: #e2e2e2;
+	height: 25px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-ms-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	transition: 0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+
+.skillbar-bar {
+	height: 25px;
+	width: 0px;
+	background: #0DD6CC;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.fa-thumbs-up {
+	font-size: 50px;
+}
