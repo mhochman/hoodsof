@@ -40,6 +40,7 @@
 
 
 
+
     <!-- Google Analytics -->
    <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -167,19 +168,22 @@
 
         <div class="row"> <!-- Row -->
           <div class="col-sm-3 img-resize">
-            <button id="modalBtn" class="modalBtn">
+            <!--<button id="modalBtn" class="modalBtn1" num="1">
+              <img src="css/images/logo_caphill.png" class="explore_tile">
+            </button>-->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-image="css/images/logo_caphill.png" data-walkscore="91" data-transitscore="73" data-bikescore="69" data-safety="" data-descriptiontitle="All Are Welcome" data-description="A leafy district just east of downtown, hip, eclectic and LGBT-friendly Capitol Hill is a trendsetter when it comes to indie fashion, artisan coffee and spirits, cutting-edge dining, and see-and-be-seen clubbing and live music.">
               <img src="css/images/logo_caphill.png" class="explore_tile">
             </button>
           </div>
           <div class="col-sm-3 img-resize">
-            <button id="modalBtn" class="modelBtn">
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-image="css/images/logo_fremont.png" data-walkscore="85" data-transitscore="58" data-bikescore="79" data-safety="" data-descriptiontitle="Fremont Title" data-description="Fremont description.">
               <img src="css/images/logo_fremont.png" class="explore_tile">
             </button>
           </div>
           <div class="col-sm-3 img-resize">
-            <a href="coming_soon.html">
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-image="css/images/logo_ballard.png" data-walkscore="88" data-transitscore="51" data-bikescore="80" data-safety="" data-descriptiontitle="Ballard Title" data-description="Ballard description.">
               <img src="css/images/logo_ballard.png" class="explore_tile">
-            </a>
+            </button>
           </div>
           <div class="col-sm-3 img-resize">
             <a href="coming_soon.html">
@@ -211,119 +215,140 @@
         </div> <!-- End Row -->
 
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                    <!--<div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="control-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="control-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>-->
 
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1 class="modal-header-text">Hood Deets:</h1>
-            <div class="row">
-              <div class="col-sm-3">
-                <img src="css/images/logo_caphill.png" class="landing_tile">
-              </div>
-              <div class="col-sm-8">
-
-              <div id="modal-data">
-                <input type="checkbox" class="read-more-state" id="post-2" />
-
-                <ul class="read-more-wrap">
-                  <li>
-                    <div class="row" id="hood-attributes">
-                      <div class="col-sm-4">
-                        <tr>
-                          <td><span id="hood-attribute-title">Walk Score:</span></td>
-                          <td>91</td>
-                        </tr>
-                      </div> <!-- END Data Col-->
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="modal-header-text">Hood Deets:</h1>
+                    <div class="row modal-image">
+                      <div class="col-sm-3">
+                        <img src="" class="landing_tile">
+                      </div>
                       <div class="col-sm-8">
-                        <div class="skillbar clearfix " data-percent="91%">
-                          <div class="skillbar-bar"></div>
-                        </div>
-                      </div> <!-- END Skillbar Col -->
-                    </div> <!-- END Row -->
-                  </li>
 
-                  <li>
-                    <div class="row" id="hood-attributes">
-                      <div class="col-sm-4">
-                        <tr>
-                          <td><span id="hood-attribute-title">Transit Score:</span></td>
-                          <td>73</td>
-                        </tr>
-                      </div> <!-- END Data Col-->
-                      <div class="col-sm-8">
-                        <div class="skillbar clearfix " data-percent="73%">
-                          <div class="skillbar-bar"></div>
-                        </div>
-                      </div> <!-- END Skillbar Col -->
-                    </div> <!-- END Row -->
-                  </li>
+                      <div id="modal-data">
+                        <input type="checkbox" class="read-more-state" id="post-2" />
 
-                  <li>
-                    <div class="row" id="hood-attributes">
-                      <div class="col-sm-4">
-                        <tr>
-                          <td><span id="hood-attribute-title">Bike Score:</span></td>
-                          <td>69</td>
-                        </tr>
-                      </div> <!-- END Data Col-->
-                      <div class="col-sm-8">
-                        <div class="skillbar clearfix " data-percent="69%">
-                          <div class="skillbar-bar"></div>
-                        </div>
-                      </div> <!-- END Skillbar Col -->
-                    </div> <!-- END Row -->
-                  </li>
+                        <ul class="read-more-wrap">
+                          <li>
+                            <div class="row" id="hood-attributes">
+                              <div class="col-sm-4">
+                                <tr>
+                                  <td><span id="hood-attribute-title">Walk Score:</span></td>
+                                  <td><span class="modal-walkscore"></span></td>
+                                </tr>
+                              </div> <!-- END Data Col-->
+                              <div class="col-sm-8">
+                                <div class="skillbar clearfix modal-walkscore-percent" data-percent="10%">
+                                  <div class="skillbar-bar"><!--<div class="skill-bar-percent">50%</div>--></div>
+                                </div>
+                              </div> <!-- END Skillbar Col -->
+                            </div> <!-- END Row -->
+                          </li>
 
+                          <li>
+                            <div class="row" id="hood-attributes">
+                              <div class="col-sm-4">
+                                <tr>
+                                  <td><span id="hood-attribute-title">Transit Score:</span></td>
+                                  <td><span class="modal-transitscore"></span></td>
+                                </tr>
+                              </div> <!-- END Data Col-->
+                              <div class="col-sm-8">
+                                <div class="skillbar clearfix modal-transitscore-percent" data-percent="73%">
+                                  <div class="skillbar-bar"></div>
+                                </div>
+                              </div> <!-- END Skillbar Col -->
+                            </div> <!-- END Row -->
+                          </li>
 
-                  <li>
-                    <div class="row" id="hood-attributes">
-                      <div class="col-sm-4">
-                        <tr>
-                          <td><span id="hood-attribute-title">Safety:</span></td>
-                          <td>3 out of 5</td>
-                        </tr>
-                      </div> <!-- END Data Col-->
-                      <div class="col-sm-8">
-                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
-                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
-                        <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
-                        <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
-                        <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
-                      </div> <!-- END Skillbar Col -->
-                    </div> <!-- END Row -->
-                  </li>
-
-                  <li class="read-more-target">
-                    <div class="row" id="hood-attributes">
-                      <div class="col-sm-8">
-                        <tr>
-                          <td><span id="hood-attribute-title">Average Rent:</span></td>
-                          <td>$1700/month</td>
-                        </tr>
-                      </div> <!-- END Data Col-->
-                    </div> <!-- END Row -->
-                  </li>
-                </ul>
-                
-                <label for="post-2" class="read-more-trigger"></label>
-              </div>
+                          <li>
+                            <div class="row" id="hood-attributes">
+                              <div class="col-sm-4">
+                                <tr>
+                                  <td><span id="hood-attribute-title">Bike Score:</span></td>
+                                  <td><span class="modal-bikescore"></span></td>
+                                </tr>
+                              </div> <!-- END Data Col-->
+                              <div class="col-sm-8">
+                                <div class="skillbar clearfix modal-bikescore-percent" data-percent="69%">
+                                  <div class="skillbar-bar"></div>
+                                </div>
+                              </div> <!-- END Skillbar Col -->
+                            </div> <!-- END Row -->
+                          </li>
 
 
-              </div>
+                          <li>
+                            <div class="row" id="hood-attributes">
+                              <div class="col-sm-4">
+                                <tr>
+                                  <td><span id="hood-attribute-title">Safety:</span></td>
+                                  <td>3 out of 5</td>
+                                </tr>
+                              </div> <!-- END Data Col-->
+                              <div class="col-sm-8">
+                                <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                                <i class="fa fa-thumbs-up" aria-hidden="true" style="font-size:30px"></i>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i>
+                              </div> <!-- END Skillbar Col -->
+                            </div> <!-- END Row -->
+                          </li>
+
+                          <li class="read-more-target">
+                            <div class="row" id="hood-attributes">
+                              <div class="col-sm-8">
+                                <tr>
+                                  <td><span id="hood-attribute-title">Average Rent:</span></td>
+                                  <td>$1700/month</td>
+                                </tr>
+                              </div> <!-- END Data Col-->
+                            </div> <!-- END Row -->
+                          </li>
+                        </ul>
+                        
+                        <label for="post-2" class="read-more-trigger"></label>
+                      </div>
+
+
+                      </div>
+                    </div>
+                    
+                    <div>
+                    <h2 class="modal-descriptiontitle"></h2>
+                    <h4 class="modal-description"></h4>
+                    <!--<h4><a href="http://www.visitseattle.org/neighborhoods/capitol-hill/" target='_blank' >http://www.visitseattle.org/neighborhoods/capitol-hill/</a></h4>-->
+                    </div>
+                    <br class="clear" />
+                  </div>
             </div>
-            
-            <div>
-            <h2>ALL ARE WELCOME</h2>
-            <h4>A leafy district just east of downtown, hip, eclectic and LGBT-friendly Capitol Hill is a trendsetter when it comes to indie fashion, artisan coffee and spirits, cutting-edge dining, and see-and-be-seen clubbing and live music.</h4>
-            <h4><a href="http://www.visitseattle.org/neighborhoods/capitol-hill/" target='_blank' >http://www.visitseattle.org/neighborhoods/capitol-hill/</a></h4>
-            </div>
-            <br class="clear" />
-          </div>
-
         </div>
-
 
     </div> <!-- END Explore Hoods -->
 
@@ -416,6 +441,7 @@
 
       </div> <!-- END Meet Hoodrats -->
 
+
     </div> <!-- END Container -->
     </div> <!-- END White -->
 
@@ -435,6 +461,9 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 
     <!-- Drag Drop JS -->
     <script>
@@ -493,66 +522,33 @@
       });
     </script>
 
-    <!-- Modal -->
+    <!-- Modal & Skill Bar -->
     <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
+      $(function() {
+          $('#exampleModal').on('show.bs.modal', function (event) {
+              var button = $(event.relatedTarget);
+              var modal = $(this);
+              modal.find('.modal-image img').attr('src', button.attr('data-image')); 
+              modal.find('.modal-walkscore').text(button.attr('data-walkscore'));
+              modal.find('.modal-walkscore-percent').attr('data-percent', (button.attr('data-walkscore') + '%').toString());
+              modal.find('.modal-transitscore').text(button.attr('data-transitscore'));
+              modal.find('.modal-transitscore-percent').attr('data-percent', (button.attr('data-transitscore') + '%').toString());
+              modal.find('.modal-bikescore').text(button.attr('data-bikescore'));
+              modal.find('.modal-bikescore-percent').attr('data-percent', (button.attr('data-bikescore') + '%').toString());
+              modal.find('.modal-descriptiontitle').text(button.attr('data-descriptiontitle'));
+              modal.find('.modal-description').text(button.attr('data-description'));
 
-    // Get the button that opens the modal
-    var btn = document.getElementsByClassName("modalBtn")[0];
+              jQuery(document).ready(function(){
+                jQuery('.skillbar').each(function(){
+                  jQuery(this).find('.skillbar-bar').animate({
+                    width:jQuery(this).attr('data-percent')
+                  },1000);
+                });
+              });
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
-
-    <!-- Skill Bar -->
-    <script>
-      function isElementVisible($elementToBeChecked)
-      {
-          var TopView = $(window).scrollTop();
-          var BotView = TopView + $(window).height();
-          var TopElement = $elementToBeChecked.offset().top;
-          var BotElement = TopElement + $elementToBeChecked.height();
-          return ((BotElement <= BotView) && (TopElement >= TopView));
-      }
-
-      $(window).scroll(function () {
-          $( ".skillbar" ).each(function() {
-              $this = $(this);
-              isOnView = isElementVisible($(this));
-              if(isOnView && !$(this).hasClass('Starting')){
-                  $(this).addClass('Starting');
-                  startAnimation($(this));
-              }
           });
       });
-
-      function startAnimation($this) {
-        $this.find('.skillbar-bar').animate({
-          width: $this.attr('data-percent')
-        }, 3000, function() {
-          // Animation complete.
-        });
-      }
     </script>
-
 
   </body>
 </html>
